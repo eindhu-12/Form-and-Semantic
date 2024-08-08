@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Software Developer Job Application Form</h1>
+    <form action="../02-08/sub.txt" method="post">
+   <fieldset>
+    <legend>Person Information</legend>
+    <div>
+        <label for="name">Full Name: </label><input type="text" placeholder="Name" id="name" autofocus required ><br><br>
+
+        <label for="email">Email: </label><input type="email" placeholder="Email" id="email" required><br><br>
+
+        <label for="number">Phone Number: </label><input type="tel" placeholder="Phone Number" id="number"required><br><br>
+
+    </div>
+   </fieldset>
+   <fieldset>
+    <legend>Job Details</legend>
+    <label for="position">Position Applied for: </label><input type="text" placeholder="Software Developer" id="position" disabled><br><br>
+
+    <label for="experience">Years of Experience: </label><input type="number" placeholder="Enter in Numbers" id="experience" required><br><br>
+
+    <label for="skills">Technical Skills: </label><input list="Skills">
+    <datalist id="Skills" >
+        <option value="Python"></option>
+        <option value="Java"></option>
+        <option value="SQL"></option>
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="Java script"></option>
+    </datalist>
+    <br><br>
+
+    <label for="loc">Preferred Location: </label>
+    <select name="Location" id="loc">
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Pune">Pune</option>
+    <option value="Bengaluru">Bengaluru</option>
+</select><br><br>
+
+        <label for="resume">Upload Resume: </label>
+        <input type="file" placeholder="Choose a file" id="resume">   
+   </fieldset><br><br>  
+   <button>Submit Application</button>
+</form>
+    
+</body>
+</html>
